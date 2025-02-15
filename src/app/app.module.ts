@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, provideExperimentalZonelessChangeDetection } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -14,7 +14,9 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     AppRoutingModule,
     FontAwesomeModule
   ],
-  providers: [],
+  providers: [
+    provideExperimentalZonelessChangeDetection()
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
