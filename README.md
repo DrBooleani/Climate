@@ -22,10 +22,11 @@ Prerequisites
 ## Installation
 1. Clone the repository
 ```bash
-git clone https://github.com/deyvidsalvatore/WeatherApp.git
+git clone https://github.com/DrBooleani/Climate.git
 ```
 2. Install the dependencies
 ```bash
+cd Climate
 npm install
 ```
 3. Create an account at OpenWeatherMap and generate environment files using ```npx -p @angular/cli@18 ng g environments```:
