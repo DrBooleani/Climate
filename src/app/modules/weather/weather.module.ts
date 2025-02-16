@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, DecimalPipe } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 import { WeatherRoutingModule } from './weather-routing.module';
@@ -7,18 +7,21 @@ import { WeatherHomeComponent } from './pages/weather-home/weather-home.componen
 import { SearchBarComponent } from './pages/weather-home/search-bar/search-bar.component';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { WeatherCardComponent } from './pages/weather-home/weather-card/weather-card.component';
 
 
 @NgModule({
   declarations: [
     WeatherHomeComponent,
-    SearchBarComponent
+    SearchBarComponent,
+    WeatherCardComponent
   ],
   imports: [
     CommonModule,
     WeatherRoutingModule,
     FontAwesomeModule,
-    FormsModule
+    FormsModule,
+    DecimalPipe
   ]
 })
 export class WeatherModule { }
